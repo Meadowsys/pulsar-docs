@@ -36,7 +36,7 @@ jobs:
 
     - name: build site
       working-directory: source
-      run: pnpm run build
+      run: pnpm run build:docs
 
     - name: checkout gh-pages branch
       uses: actions/checkout@2541b1294d2704b0964813337f33b291d3f8596b # v3.0.2
@@ -67,8 +67,8 @@ jobs:
         mv deploy/git deploy/.git
 
         # move new files over
-        cp -R source/.output/public/* deploy
-        cp -R source/.output/public/.* deploy
+        cp -R source/docs/.vuepress/dist/* deploy
+        cp -R source/docs/.vuepress/dist/.* deploy
 
         # set some variables
         cd source
