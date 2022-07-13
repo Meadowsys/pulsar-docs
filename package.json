@@ -1,0 +1,12 @@
+{
+	"name": "pulsar-docs",
+	"private": true,
+	"packageManager": "pnpm@7.5.1",
+	"scripts": {
+		"dev:docs": "vuepress dev docs",
+		"build:docs": "vuepress build docs"
+	},
+	"devDependencies": {
+		"vuepress": "2.0.0-beta.49"
+	}
+}
