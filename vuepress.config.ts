@@ -1,4 +1,5 @@
 import { defineUserConfig, defaultTheme } from "vuepress";
+import { shikiPlugin } from "@vuepress/plugin-shiki";
 
 export default defineUserConfig({
 	port: 3000,
@@ -17,5 +18,8 @@ export default defineUserConfig({
 				selectLanguageName: "Nederlands"
 			}
 		}
-	})
+	}),
+	plugins: [
+		shikiPlugin({ theme: "one-dark-pro" })
+	]
 });
