@@ -2,6 +2,7 @@
 commands-show-output: false
 line-length: false
 no-duplicate-heading: false
+no-hard-tabs: false
 no-inline-html: false
 ol-prefix:
   style: one
