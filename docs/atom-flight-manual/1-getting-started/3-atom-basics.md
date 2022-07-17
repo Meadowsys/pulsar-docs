@@ -22,23 +22,23 @@ You can find definitions for all of the various terms that we use throughout the
 
 In that welcome screen, we are introduced to probably the most important command in Atom, the Command Palette. If you press <kbd class="platform-mac">Cmd+Shift+P</kbd><kbd class="platform-windows platform-linux">Ctrl+Shift+P</kbd> while focused in an editor pane, the command palette will pop up.
 
-<!-- {{#note}} -->
+::: tip
 
 Throughout the book, we will use shortcut keybindings like <kbd class="platform-mac">Cmd+Shift+P</kbd><kbd class="platform-windows platform-linux">Ctrl+Shift+P</kbd> to demonstrate how to run a command. These are the default keybindings for the platform that we detected you running.
 
 If you want to see a different platform than the one we detected, you may choose a different one by using the platform selector near the top of the page:
 
-![Platform Selector](./images/platform-selector.png "Platform Selector")
+![Platform Selector](./images/platform-selector.png)
 
 If the Platform Selector is not present, then the current page doesn't have any platform-specific content.
 
 If you have customized your Atom keymap, you can always see the keybinding you have mapped in the Command Palette or the Keybindings tab in the [Settings View](#settings-and-preferences).
 
-<!-- {{/note}} -->
+:::
 
 This search-driven menu can do just about any major task that is possible in Atom. Instead of clicking around all the application menus to look for something, you can press <kbd class="platform-mac">Cmd+Shift+P</kbd><kbd class="platform-windows platform-linux">Ctrl+Shift+P</kbd> and search for the command.
 
-![Command Palette](./images/command-palette.png "Command Palette")
+![Command Palette](./images/command-palette.png)
 
 Not only can you see and quickly search through thousands of possible commands, but you can also see if there is a keybinding associated with it. This is great because it means you can guess your way to doing interesting things while also learning the shortcut key strokes for doing it.
 
@@ -48,21 +48,21 @@ For the rest of the book, we will try to be clear as to the text you can search 
 
 Atom has a number of settings and preferences you can modify in the Settings View.
 
-![Settings View](./images/settings.png "Settings View")
+![Settings View](./images/settings.png)
 
 This includes things like changing the theme, specifying how to handle wrapping, font settings, tab size, scroll speed and much more. You can also use this screen to install new packages and themes, which we'll cover in [Atom Packages](/using-atom/sections/atom-packages).
 
 To open the Settings View, you can:
 
-* Use the <span class="platform-mac">*Atom > Preferences*</span><span class="platform-windows">*File > Settings*</span><span class="platform-linux">*Edit > Preferences*</span> menu item in the menu bar
-* Search for `settings-view:open` in the [Command Palette](#command-palette)
-* Use the <kbd class="platform-mac">Cmd+,</kbd><kbd class="platform-windows platform-linux">Ctrl+,</kbd> keybinding
+- Use the <span class="platform-mac">*Atom > Preferences*</span><span class="platform-windows">*File > Settings*</span><span class="platform-linux">*Edit > Preferences*</span> menu item in the menu bar
+- Search for `settings-view:open` in the [Command Palette](#command-palette)
+- Use the <kbd class="platform-mac">Cmd+,</kbd><kbd class="platform-windows platform-linux">Ctrl+,</kbd> keybinding
 
 ### Changing the Theme
 
 The Settings View also lets you change the themes for Atom. Atom ships with 4 different UI themes, dark and light variants of the Atom and One theme, as well as 8 different syntax themes. You can modify the active theme by clicking on the Themes tab in the sidebar of the Settings View, or you can install new themes by clicking the Install tab.
 
-![Changing the theme from the Settings View](./images/theme.png "Changing the theme from the Settings View")
+![Changing the theme from the Settings View](./images/theme.png)
 
 The UI themes control the style of UI elements like the tabs and the tree view, while the syntax themes control the syntax highlighting of text you load into the editor. To change the syntax or UI theme, simply pick something different in the appropriate dropdown list.
 
@@ -88,7 +88,7 @@ Now that your editor is looking and acting how you want, let's start opening up 
 
 There are several ways to open a file in Atom. You can do it by choosing *File > Open* from the menu bar or by pressing <kbd class="platform-mac">Cmd+O</kbd><kbd class="platform-windows platform-linux">Ctrl+O</kbd> to choose a file from the standard dialog.
 
-![Open file by dialog](./images/open-file.png "Open file by dialog")
+![Open file by dialog](./images/open-file.png)
 
 This is useful for opening a file that is not contained in the project you're currently in (more on that next), or if you're starting from a new window for some reason.
 
@@ -146,15 +146,13 @@ You can open any number of directories from the command line by passing their pa
 
 When you open Atom with one or more directories, you will automatically get a Tree View on the side of your window.
 
-![Tree View in an open project](./images/project-view.png "Tree View in an open project")
+![Tree View in an open project](./images/project-view.png)
 
 The Tree View allows you to explore and modify the file and directory structure of your project. You can open, rename, delete and create new files from this view.
 
 You can also hide and show it with <kbd class="platform-mac">Cmd+\\</kbd><kbd class="platform-windows platform-linux">Ctrl+\\</kbd> or the `tree-view:toggle` command from the Command Palette, and <kbd class="platform-mac">Ctrl+0</kbd><kbd class="platform-windows platform-linux">Alt+\\</kbd> will focus it. When the Tree view has focus you can press <kbd class="platform-all">A</kbd>, <kbd class="platform-all">M</kbd>, or <kbd class="platform-all">Delete</kbd> to add, move or delete files and folders. You can also right-click on a file or folder in the Tree view to see many of the various options, including all of these plus showing the file in <span class="platform-mac">Finder</span><span class="platform-windows">Windows Explorer</span><span class="platform-linux">your native filesystem</span> or copying the file path to the clipboard.
 
-<!-- {{#note}} -->
-
-**Atom Packages**
+::: tip Atom Packages
 
 Like many parts of Atom, the Tree View is not built directly into the editor, but is its own standalone package that is shipped with Atom by default. Packages that are bundled with Atom are referred to as Core packages. Ones that aren't bundled with Atom are referred to as Community packages.
 
@@ -162,7 +160,7 @@ You can find the source code to the Tree View on GitHub at <https://github.com/a
 
 This is one of the interesting things about Atom. Many of its core features are actually just packages implemented the same way you would implement any other functionality. This means that if you don't like the Tree View for example, you could write your own implementation of that functionality and replace it entirely.
 
-<!-- {{/note}} -->
+:::
 
 ### Opening a File in a Project
 
@@ -170,7 +168,7 @@ Once you have a project open in Atom, you can easily find and open any file with
 
 If you press <kbd class="platform-mac">Cmd+T</kbd><kbd class="platform-windows platform-linux">Ctrl+T</kbd> or <kbd class="platform-mac">Cmd+P</kbd><kbd class="platform-windows platform-linux">Ctrl+P</kbd>, the Fuzzy Finder will pop up. This will let you quickly search for any file in your project by typing parts of the path.
 
-![Opening files with the Fuzzy Finder](./images/finder.png "Opening files with the Fuzzy Finder")
+![Opening files with the Fuzzy Finder](./images/finder.png)
 
 You can also search through only the files currently opened (rather than every file in your project) with <kbd class="platform-mac">Cmd+B</kbd><kbd class="platform-windows platform-linux">Ctrl+B</kbd>. This searches through your "buffers" or open files. You can also limit this fuzzy search with <kbd class="platform-mac">Cmd+Shift+B</kbd><kbd class="platform-windows platform-linux">Ctrl+Shift+B</kbd>, which searches only through the files which are new or have been modified since your last Git commit.
 
@@ -178,9 +176,7 @@ The fuzzy finder uses the `core.ignoredNames`, `fuzzy-finder.ignoredNames` and `
 
 Both `core.ignoredNames` and `fuzzy-finder.ignoredNames` are interpreted as glob patterns as implemented by the [minimatch Node module](https://github.com/isaacs/minimatch).
 
-<!-- {{#tip}} -->
-
-**Configuration Setting Notation**
+::: tip Configuration Setting Notation
 
 Sometimes you'll see us refer to configuration settings all spelled out like "Ignored Names in Core Settings". Other times you'll see us use the shorthand name like `core.ignoredNames`. Both of these refer to the same thing. The shorthand is the package name, then a dot `.`, followed by the "camel-cased" name of the setting.
 
@@ -192,4 +188,4 @@ If you have a phrase you want to camel-case, follow these steps:
 
 So "Ignored Names" becomes "ignoredNames".
 
-<!-- {{/tip}} -->
+:::

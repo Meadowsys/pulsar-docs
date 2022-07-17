@@ -17,7 +17,7 @@ As we've used Atom to build Atom, what began as an experiment has gradually matu
 
 The web is not without its faults, but two decades of development has forged it into an incredibly malleable and powerful platform. So when we set out to write a text editor that we ourselves would want to extend, web technology was the obvious choice. But first, we had to free it from its chains.
 
-## The Native Web
+### The Native Web
 
 Web browsers are great for browsing web pages, but writing code is a specialized activity that warrants dedicated tools. More importantly, the browser severely restricts access to the local system for security reasons, and for us, a text editor that couldn't write files or run local subprocesses was a non-starter.
 
@@ -27,13 +27,13 @@ All the APIs available to a typical Node.js application are also available to th
 
 Since everything is local, you don't have to worry about asset pipelines, script concatenation, and asynchronous module definitions. If you want to load some code, just require it at the top of your file. Node's module system makes it easy to break the system down into lots of small, focused packages.
 
-## JavaScript, Meet C++
+### JavaScript, Meet C++
 
 Interacting with native code is also really simple. For example, we wrote a wrapper around the Oniguruma regular expression engine for our TextMate grammar support. In a browser, that would have required adventures with NaCl or Esprima. Node integration made it easy.
 
 In addition to the Node APIs, we also expose APIs for native dialogs, adding application and context menu items, manipulating the window dimensions, etc.
 
-## Web Tech: The Fun Parts
+### Web Tech: The Fun Parts
 
 Another great benefit, that comes with writing code for Atom, is the guarantee that it's running on the newest version of Chromium. That means we can ignore issues like browser compatibility and polyfills. We can use all the web's shiny features of tomorrow, today.
 

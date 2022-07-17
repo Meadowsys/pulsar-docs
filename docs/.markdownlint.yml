@@ -7,3 +7,5 @@ no-inline-html: false
 ol-prefix:
   style: one
 single-h1: false
+ul-style:
+  style: dash

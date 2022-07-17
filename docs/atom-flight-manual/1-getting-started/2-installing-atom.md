@@ -10,19 +10,27 @@ To get started with Atom, we'll need to get it on your system. This section will
 
 Installing Atom should be fairly simple. Generally, you can go to <https://atom.io> and you should see a download button as shown here:
 
-<PlatformSpecific>
-	<template #macos>
-		<img src="./images/mac-downloads.png" alt="Download buttons on https://atom.io">
-	</template>
-	<template #linux>
-		<img src="./images/linux-downloads.png" alt="Download buttons on https://atom.io">
-	</template>
-	<template #windows>
-		<img src="./images/windows-downloads.png" alt="Download buttons on https://atom.io">
-	</template>
-</PlatformSpecific>
+<macOS>
+
+![Download buttons on https://atom.io](./images/mac-downloads.png)
+
+</macOS>
+
+<Windows>
+
+![Download buttons on https://atom.io](./images/windows-downloads.png)
+
+</Windows>
+
+<Linux>
+
+![Download buttons on https://atom.io](./images/linux-downloads.png)
+
+</Linux>
 
 The button or buttons should be specific to your platform and the download package should be easily installable. However, let's go over them here in a bit of detail.
+
+<macOS>
 
 ## Installing Atom on Mac
 
@@ -43,7 +51,11 @@ $ which atom
 $
 ```
 
-To install the `atom` and `apm` commands, run "Window: Install Shell Commands" from the [Command Palette](./3-atom-basics), which will prompt you for an administrator password.
+To install the `atom` and `apm` commands, run "Window: Install Shell Commands" from the [Command Palette](./3-atom-basics#command-palette), which will prompt you for an administrator password.
+
+</macOS>
+
+<Windows>
 
 ## Installing Atom on Windows
 
@@ -54,6 +66,10 @@ Atom is available with Windows installers that can be downloaded from <https://a
 The context menu `Open with Atom` in File Explorer, and the option to make Atom available for file association using `Open with...`, is controlled by the System Settings panel as seen above.
 
 With Atom open, click on `File > Settings`, and then the `System` tab on the left. Check the boxes next to `Show in file context menus`, as well as `Show in folder context menus`. And you’re all set.
+
+</Windows>
+
+<Linux>
 
 ## Installing Atom on Linux
 
@@ -141,11 +157,13 @@ Alternatively, you can download the [Atom .rpm package](https://atom.io/download
 $ sudo zypper in -y atom.x86_64.rpm
 ```
 
+</Linux>
+
 ## Updating Atom
 
 You should consider updating Atom periodically for the latest improvements to the software.  Additionally, When Atom receives hotfixes for security vulnerabilities you will want to update your version of Atom as soon as possible.
 
-### Mac
+<macOS>
 
 "Automatically Update" is enabled by default in Core Settings of the [Settings View](https://flight-manual.atom.io/getting-started/sections/atom-basics/#settings-and-preferences), which will allow Atom to check for updates automatically. If you disable this setting you can update Atom manually.
 
@@ -156,7 +174,9 @@ To perform a manual update:
 
 Atom will begin to update if an update is available.
 
-### Windows
+</macOS>
+
+<Windows>
 
 "Automatically Update" is enabled by default in Core Settings of the [Settings View](https://flight-manual.atom.io/getting-started/sections/atom-basics/#settings-and-preferences), which will allow Atom to check for updates automatically. If you disable this setting you can update Atom manually.
 
@@ -167,9 +187,13 @@ To perform a manual update:
 
 Atom will begin to update if an update is available.
 
-### Linux
+</Windows>
+
+<Linux>
 
 If you are using Atom's official package repositories, use your distribution's package manager to update Atom.  Otherwise, you will need to manually download and install the latest `.rpm` or `.deb` package from <https://atom.io>. For more details, see [Installing Atom on Linux.](https://flight-manual.atom.io/getting-started/sections/installing-atom/#installing-atom-on-linux)
+
+</Linux>
 
 ## Portable Mode
 
@@ -177,7 +201,7 @@ Atom stores configuration and state in a `.atom` directory usually located in yo
 
 To setup Atom in portable mode download the [zip/tar.gz package for your system](https://github.com/atom/atom/releases/latest) and extract it to your removable storage.
 
-### Windows
+<Windows>
 
 Then create a `.atom` directory alongside the directory that contains atom.exe, for example:
 
@@ -186,7 +210,9 @@ e:\atom-1.14\atom.exe
 e:\.atom
 ```
 
-### Mac
+</Windows>
+
+<macOS>
 
 Then create a `.atom` directory alongside the Atom.app application, for example:
 
@@ -195,7 +221,9 @@ Then create a `.atom` directory alongside the Atom.app application, for example:
 /MyUSB/.atom
 ```
 
-### Linux
+</macOS>
+
+<Linux>
 
 Then create a `.atom` directory alongside the directory that contains the Atom binary, for example:
 
@@ -203,6 +231,8 @@ Then create a `.atom` directory alongside the directory that contains the Atom b
 /media/myusb/atom-1.14/atom
 /media/myusb/.atom
 ```
+
+</Linux>
 
 ### Portable Notes
 
@@ -214,7 +244,7 @@ Then create a `.atom` directory alongside the directory that contains the Atom b
 
 ## Building Atom from Source
 
-The [Hacking on Atom Core](../hacking-atom/hacking-on-atom-core) section of the flight manual covers instructions on how to clone and build the source code if you prefer that option.
+The [Hacking on Atom Core](/hacking-atom/sections/hacking-on-atom-core/) section of the flight manual covers instructions on how to clone and build the source code if you prefer that option.
 
 ## Proxy and Firewall Settings
 
