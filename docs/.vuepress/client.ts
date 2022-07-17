@@ -1,9 +1,9 @@
 import { defineClientConfig } from "@vuepress/client";
-import PlatformSwitcher from "./docs/.components/PlatformSwitcher.vue";
-import macOS from "./docs/.components/macOS.vue";
-import Linux from "./docs/.components/Linux.vue";
-import Windows from "./docs/.components/Windows.vue";
-import Unknown from "./docs/.components/Unknown.vue";
+import PlatformSwitcher from "../.components/PlatformSwitcher.vue";
+import macOS from "../.components/macOS.vue";
+import Linux from "../.components/Linux.vue";
+import Windows from "../.components/Windows.vue";
+import Unknown from "../.components/Unknown.vue";
 
 export default defineClientConfig({
 	enhance({ app }) {

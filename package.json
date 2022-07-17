@@ -12,7 +12,7 @@
 	},
 	"pnpm": {
 		"patchedDependencies": {
-			"@vuepress/theme-default@2.0.0-beta.49": "patches/platform-switcher.patch"
+			"@vuepress/theme-default@2.0.0-beta.49": "docs/.patches/platform-switcher.patch"
 		}
 	}
 }
