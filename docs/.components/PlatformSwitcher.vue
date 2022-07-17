@@ -11,24 +11,22 @@
 	type Platform = KnownPlatform | "unknown";
 
 	export const platform = ref<Platform>("unknown");
-
-	// initially detect platform (can be set by user later)
-	const ua = navigator.userAgent;
-	if (ua.indexOf("Mac") !== -1) platform.value = "macOS";
-	else if (ua.indexOf("Linux") !== -1) platform.value = "Linux";
-	else if (ua.indexOf("Win") !== -1) platform.value = "Windows";
-
-	function switch_platform(_platform: KnownPlatform) {
-		platform.value = _platform;
-	}
 </script>
 
 <script setup lang="ts">
-	// most if not all of the stuff in this script setup
-	// is copied over from NavbarDropdown.vue
 	import DropdownTransition from "@vuepress/theme-default/lib/client/components/DropdownTransition.vue";
-	import { ref, watch } from "vue";
+	import { ref, watch, onBeforeMount } from "vue";
 	import { useRoute } from "vue-router";
+
+	onBeforeMount(() => {
+		if (platform.value === "unknown") {
+			// initially detect platform (can be set by user later)
+			const ua = navigator.userAgent;
+			if (ua.indexOf("Mac") !== -1) platform.value = "macOS";
+			else if (ua.indexOf("Linux") !== -1) platform.value = "Linux";
+			else if (ua.indexOf("Win") !== -1) platform.value = "Windows";
+		}
+	});
 
 	const open = ref(false)
 	const route = useRoute()
@@ -88,7 +86,7 @@
 				>
 					<a
 						:class="{ 'router-link-active': child.text === platform }"
-						@click="switch_platform(child.text)"
+						@click="platform = child.text"
 					>
 						{{ child.text }}
 					</a>
