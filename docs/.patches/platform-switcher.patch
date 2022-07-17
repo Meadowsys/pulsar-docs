@@ -1,25 +1,24 @@
 diff --git a/lib/client/components/NavbarItems.vue b/lib/client/components/NavbarItems.vue
-index 58c4307aaeea047f31dd221609133eaf20cc1808..6ef224966713636fa9268b2c11756bfdcbf795a9 100644
+index 58c4307aaeea047f31dd221609133eaf20cc1808..f98547aef3b906271162503adfded3438d0ad99d 100644
 --- a/lib/client/components/NavbarItems.vue
 +++ b/lib/client/components/NavbarItems.vue
-@@ -150,10 +150,16 @@ const navbarLinks = computed(() => [
+@@ -150,10 +150,15 @@ const navbarLinks = computed(() => [
  </script>
- 
+
  <template>
 -  <nav v-if="navbarLinks.length" class="navbar-items">
 -    <div v-for="item in navbarLinks" :key="item.text" class="navbar-item">
 -      <NavbarDropdown v-if="item.children" :item="item" />
 -      <AutoLink v-else :item="item" />
 +  <nav class="navbar-items">
-+    <div class="navbar-item">
-+      <PlatformSwitcher />
-     </div>
-+
 +    <template v-if="navbarLinks.length">
 +      <div v-for="item in navbarLinks" :key="item.text" class="navbar-item">
 +        <NavbarDropdown v-if="item.children" :item="item" />
 +        <AutoLink v-else :item="item" />
 +      </div>
 +    </template>
++    <div class="navbar-item">
++      <PlatformSwitcher />
+     </div>
    </nav>
  </template>

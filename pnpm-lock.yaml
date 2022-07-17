@@ -2,7 +2,7 @@ lockfileVersion: 5.4
 
 patchedDependencies:
   '@vuepress/theme-default@2.0.0-beta.49':
-    hash: errm7vxrsgznj3oxlzecg6ijsa
+    hash: oxjrkffphisjwlfyuhfqqislue
     path: docs/.patches/platform-switcher.patch
 
 specifiers:
@@ -477,7 +477,7 @@ packages:
       '@vue/shared': 3.2.37
     dev: true
 
-  /@vuepress/theme-default/2.0.0-beta.49_errm7vxrsgznj3oxlzecg6ijsa:
+  /@vuepress/theme-default/2.0.0-beta.49_oxjrkffphisjwlfyuhfqqislue:
     resolution: {integrity: sha512-HUhDT7aWdtsZTRmDDWgWc9vRWGKGLh8GB+mva+TQABTgXV4qPmvuKzRi0yOU3FX1todRifxVPJTiJYVfh7zkPQ==}
     peerDependencies:
       sass-loader: ^13.0.0
@@ -1677,7 +1677,7 @@ packages:
       '@vuepress/bundler-vite': 2.0.0-beta.49
       '@vuepress/cli': 2.0.0-beta.49
       '@vuepress/core': 2.0.0-beta.49
-      '@vuepress/theme-default': 2.0.0-beta.49_errm7vxrsgznj3oxlzecg6ijsa
+      '@vuepress/theme-default': 2.0.0-beta.49_oxjrkffphisjwlfyuhfqqislue
     transitivePeerDependencies:
       - '@vue/composition-api'
       - less
