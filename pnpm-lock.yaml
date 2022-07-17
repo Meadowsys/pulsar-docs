@@ -3,7 +3,7 @@ lockfileVersion: 5.4
 patchedDependencies:
   '@vuepress/theme-default@2.0.0-beta.49':
     hash: errm7vxrsgznj3oxlzecg6ijsa
-    path: patches/@vuepress__theme-default@2.0.0-beta.49.patch
+    path: patches/platform-switcher.patch
 
 specifiers:
   '@vuepress/plugin-shiki': 2.0.0-beta.49
