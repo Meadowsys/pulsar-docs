@@ -24,6 +24,8 @@ function switch_platform(_platform: KnownPlatform) {
 </script>
 
 <script setup lang="ts">
+// most if not all of the stuff in this script setup
+// is copied over from NavbarDropdown.vue
 import DropdownTransition from "@vuepress/theme-default/lib/client/components/DropdownTransition.vue";
 import { ref, watch } from "vue";
 import { useRoute } from "vue-router";
