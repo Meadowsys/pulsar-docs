@@ -1,6 +1,6 @@
 ---
 title: Summary
-prev: ./atom-basics.md
+prev: ./3-atom-basics.md
 ---
 
 # Summary

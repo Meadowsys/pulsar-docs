@@ -1,7 +1,7 @@
 ---
 title: Atom Basics
-prev: ./installing-atom.md
-next: ./summary.md
+prev: ./2-installing-atom.md
+next: ./4-summary.md
 ---
 
 # Atom Basics
@@ -66,7 +66,7 @@ The Settings View also lets you change the themes for Atom. Atom ships with 4 di
 
 The UI themes control the style of UI elements like the tabs and the tree view, while the syntax themes control the syntax highlighting of text you load into the editor. To change the syntax or UI theme, simply pick something different in the appropriate dropdown list.
 
-There are also dozens of themes on https://atom.io that you can choose from if you want something different. We will cover customizing a theme in [Style Tweaks](/using-atom/sections/basic-customization) and creating your own theme in [Creating a Theme](/hacking-atom/sections/creating-a-theme).
+There are also dozens of themes on <https://atom.io> that you can choose from if you want something different. We will cover customizing a theme in [Style Tweaks](/using-atom/sections/basic-customization) and creating your own theme in [Creating a Theme](/hacking-atom/sections/creating-a-theme).
 
 ### Soft Wrap
 

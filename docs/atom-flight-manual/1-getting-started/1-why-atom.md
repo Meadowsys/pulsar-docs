@@ -1,6 +1,6 @@
 ---
 title: Why Atom?
-next: ./installing-atom.md
+next: ./2-installing-atom.md
 ---
 
 # Why Atom?

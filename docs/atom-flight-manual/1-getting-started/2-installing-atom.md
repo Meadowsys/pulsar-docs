@@ -1,7 +1,7 @@
 ---
 title: Installing Atom
-prev: ./why-atom.md
-next: ./atom-basics.md
+prev: ./1-why-atom.md
+next: ./3-atom-basics.md
 ---
 
 # Installing Atom
@@ -32,7 +32,7 @@ When you first open Atom, it will try to install the `atom` and `apm` commands f
 
 ```sh
 $ which atom
-> /usr/local/bin/atom
+/usr/local/bin/atom
 $
 ```
 
@@ -43,7 +43,7 @@ $ which atom
 $
 ```
 
-To install the `atom` and `apm` commands, run "Window: Install Shell Commands" from the [Command Palette](./atom-basics), which will prompt you for an administrator password.
+To install the `atom` and `apm` commands, run "Window: Install Shell Commands" from the [Command Palette](./3-atom-basics), which will prompt you for an administrator password.
 
 ## Installing Atom on Windows
 
