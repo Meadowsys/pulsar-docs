@@ -10,11 +10,17 @@ To get started with Atom, we'll need to get it on your system. This section will
 
 Installing Atom should be fairly simple. Generally, you can go to <https://atom.io> and you should see a download button as shown here:
 
-![Download buttons on https://atom.io](./images/mac-downloads.png "Download buttons on https://atom.io")
-
-<!-- windows: ![Download buttons on https://atom.io](../../images/windows-downloads.png "Download buttons on https://atom.io") -->
-
-<!-- linux: ![Download buttons on https://atom.io](../../images/linux-downloads.png "Download buttons on https://atom.io") -->
+<PlatformSpecific>
+	<template #macos>
+		<img src="./images/mac-downloads.png" alt="Download buttons on https://atom.io">
+	</template>
+	<template #linux>
+		<img src="./images/linux-downloads.png" alt="Download buttons on https://atom.io">
+	</template>
+	<template #windows>
+		<img src="./images/windows-downloads.png" alt="Download buttons on https://atom.io">
+	</template>
+</PlatformSpecific>
 
 The button or buttons should be specific to your platform and the download package should be easily installable. However, let's go over them here in a bit of detail.
 
