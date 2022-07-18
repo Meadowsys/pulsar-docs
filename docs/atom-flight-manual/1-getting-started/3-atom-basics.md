@@ -6,6 +6,8 @@ next: ./4-summary.md
 
 # Atom Basics
 
+<!-- todo <kbd> elements -->
+
 Now that Atom is installed on your system, let's fire it up, configure it and get acquainted with the editor.
 
 When you launch Atom for the first time, you should get a screen that looks like this:
