@@ -16,6 +16,8 @@ This is the Atom welcome screen and gives you a pretty good starting point for h
 
 ## Terminology
 
+<!-- todo link -->
+
 You can find definitions for all of the various terms that we use throughout the manual in our [Glossary](/resources/sections/glossary/).
 
 ## Command Palette
@@ -50,6 +52,8 @@ Atom has a number of settings and preferences you can modify in the Settings Vie
 
 ![Settings View](./images/settings.png)
 
+<!-- todo link -->
+
 This includes things like changing the theme, specifying how to handle wrapping, font settings, tab size, scroll speed and much more. You can also use this screen to install new packages and themes, which we'll cover in [Atom Packages](/using-atom/sections/atom-packages).
 
 To open the Settings View, you can:
@@ -66,6 +70,8 @@ The Settings View also lets you change the themes for Atom. Atom ships with 4 di
 
 The UI themes control the style of UI elements like the tabs and the tree view, while the syntax themes control the syntax highlighting of text you load into the editor. To change the syntax or UI theme, simply pick something different in the appropriate dropdown list.
 
+<!-- todo 2 links -->
+
 There are also dozens of themes on <https://atom.io> that you can choose from if you want something different. We will cover customizing a theme in [Style Tweaks](/using-atom/sections/basic-customization) and creating your own theme in [Creating a Theme](/hacking-atom/sections/creating-a-theme).
 
 ### Soft Wrap
@@ -77,6 +83,8 @@ You can use the Settings View to specify your whitespace and wrapping preference
 Enabling "Soft Tabs" will insert spaces instead of actual tab characters when you press the <kbd class="platform-all">Tab</kbd> key and the "Tab Length" setting specifies how many spaces to insert when you do so, or how many spaces are used to represent a tab if "Soft Tabs" is disabled.
 
 The "Soft Wrap" option will wrap lines that are too long to fit in your current window. If soft wrapping is disabled, the lines will simply run off the side of the screen and you will have to scroll the window to see the rest of the content. If "Soft Wrap At Preferred Line Length" is toggled, the lines will wrap at 80 characters instead of the end of the screen. You can also change the default line length to a value other than 80 on this screen.
+
+<!-- todo link -->
 
 In [Basic Customization](/using-atom/sections/basic-customization/) we will see how to set different wrap preferences for different types of files (for example, if you want to wrap Markdown files but not other files).
 
@@ -91,6 +99,8 @@ There are several ways to open a file in Atom. You can do it by choosing *File >
 ![Open file by dialog](./images/open-file.png)
 
 This is useful for opening a file that is not contained in the project you're currently in (more on that next), or if you're starting from a new window for some reason.
+
+<!-- todo 2 links -->
 
 Another way to open a file in Atom is from the command line using the `atom` command. <span class="platform-mac">The Atom menu bar has a command named "Install Shell Commands" which installs the `atom` and `apm` commands [if Atom wasn't able to install them itself](/getting-started/sections/installing-atom/#installing-atom-on-mac).</span><span class="platform-windows platform-linux">The `atom` and `apm` commands are installed automatically as a part of Atom's [installation process](/getting-started/sections/installing-atom/).</span>
 
@@ -171,6 +181,8 @@ If you press <kbd class="platform-mac">Cmd+T</kbd><kbd class="platform-windows p
 ![Opening files with the Fuzzy Finder](./images/finder.png)
 
 You can also search through only the files currently opened (rather than every file in your project) with <kbd class="platform-mac">Cmd+B</kbd><kbd class="platform-windows platform-linux">Ctrl+B</kbd>. This searches through your "buffers" or open files. You can also limit this fuzzy search with <kbd class="platform-mac">Cmd+Shift+B</kbd><kbd class="platform-windows platform-linux">Ctrl+Shift+B</kbd>, which searches only through the files which are new or have been modified since your last Git commit.
+
+<!-- todo link -->
 
 The fuzzy finder uses the `core.ignoredNames`, `fuzzy-finder.ignoredNames` and `core.excludeVCSIgnoredPaths` configuration settings to filter out files and folders that will not be shown. If you have a project with tons of files you don't want it to search through, you can add patterns or paths to either of these config settings or your [standard `.gitignore` files](https://git-scm.com/docs/gitignore). We'll learn more about config settings in [Global Configuration Settings](/using-atom/sections/basic-customization/#global-configuration-settings), but for now you can easily set these in the Settings View under Core Settings.
 
