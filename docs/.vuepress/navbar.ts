@@ -1,4 +1,5 @@
 import type { NavbarConfig } from "@vuepress/theme-default";
+import { getting_started_children } from "./shared";
 
 type Texts = {
 	flight_manual: string;
@@ -21,18 +22,9 @@ function define_navbar(t: Texts): NavbarConfig {
 			children: [
 				{
 					text: t.getting_started.title,
-					children: [
-						flight_manual("/1-getting-started/1-why-atom"),
-						flight_manual("/1-getting-started/2-installing-atom"),
-						flight_manual("/1-getting-started/3-atom-basics"),
-						flight_manual("/1-getting-started/4-summary")
-					]
+					children: getting_started_children
 				}
 			]
 		}
 	];
-}
-
-function flight_manual(str: string) {
-	return `/atom-flight-manual${str}`;
 }

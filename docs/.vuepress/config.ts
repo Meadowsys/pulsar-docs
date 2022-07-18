@@ -1,6 +1,7 @@
 import { defineUserConfig, defaultTheme } from "vuepress";
 import { shikiPlugin } from "@vuepress/plugin-shiki";
 import { navbar_en } from "./navbar";
+import { sidebar_en } from "./sidebar";
 
 export default defineUserConfig({
 	port: 3000,
@@ -14,7 +15,8 @@ export default defineUserConfig({
 		locales: {
 			"/": {
 				selectLanguageName: "English",
-				navbar: navbar_en
+				navbar: navbar_en,
+				sidebar: sidebar_en
 			},
 			"/nl/": {
 				selectLanguageName: "Nederlands"
