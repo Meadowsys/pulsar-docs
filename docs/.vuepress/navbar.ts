@@ -1,5 +1,5 @@
 import type { NavbarConfig } from "@vuepress/theme-default";
-import { getting_started_children } from "./shared";
+import { paths, children } from "./shared";
 
 type Texts = {
 	flight_manual: string;
@@ -22,7 +22,7 @@ function define_navbar(t: Texts): NavbarConfig {
 			children: [
 				{
 					text: t.getting_started.title,
-					children: getting_started_children
+					children: children(paths["atom-flight-manual"]["1-getting-started"])
 				}
 			]
 		}
